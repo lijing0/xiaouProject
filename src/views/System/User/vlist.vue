@@ -14,7 +14,7 @@
                   <el-tag type="danger" v-if="scope.row.status==2">禁用</el-tag>
               </template>
           </el-table-column>
-          <el-table-column label="修改">
+          <el-table-column label="操作">
                 <template slot-scope="scope">
                     <el-button type="primary" size="small" @click="edit(scope.row)" circle icon="el-icon-edit"></el-button>
                     <el-button type="danger" size="small"  @click="del(scope.row.uid)"  circle icon="el-icon-delete"></el-button>
