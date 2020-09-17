@@ -97,7 +97,7 @@ export default {
 .box{
     display: inline-block;
     margin-top: 20px;
-    width: 700px;
+    width: 660px;
     height: 300px;
     background: #fff;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
