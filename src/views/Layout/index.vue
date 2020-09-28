@@ -4,10 +4,11 @@
       <Left />
     </el-aside>
     <el-container class="page-content">
-      <el-header class="page-header">
+      <el-header class="page-header">  
         <Top />
       </el-header>
       <el-main class="page-main">
+        <tagslist/>
         <router-view/>
       </el-main>
     </el-container>
@@ -17,6 +18,7 @@
 <script>
 import Left from "./left";
 import Top from "./top";
+import tagslist from './tagslist'
 import {mapState} from "vuex"
 export default {
   data() {
@@ -30,6 +32,7 @@ export default {
   components: {
     Left,
     Top,
+    tagslist
   },
 };
 </script>
@@ -58,5 +61,9 @@ export default {
 }
 .toggle-btn i{
     font-size:16px;
+}
+.page-main{
+  position: relative;
+  padding-top: 50px;
 }
 </style>

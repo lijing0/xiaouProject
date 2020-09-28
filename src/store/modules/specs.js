@@ -7,7 +7,7 @@ export default {
     state: {
         specslist:[],  // 角色列表
         page:1, // 页码数
-        size:3, // 每页数量
+        size:10, // 每页数量
         total:0 //总条数
     },
     getters: {
